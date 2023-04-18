@@ -1,4 +1,5 @@
 <?
+include "header.php";
 session_start();
 include "verification.php";
 
@@ -55,7 +56,7 @@ switch ($choix) {
 			<ul>
 				<li><a href="jeu.php">Accueil</a></li>
 				<li><a href="#">Profil</a></li>
-				<li><a href="#">Personnages</a></li>
+				<li><a href="personnage.php">Personnages</a></li>
 				<li><a href="#">Quêtes</a></li>
 				<li><a href="deconnexion.php">Déconnexion</a></li>
 			</ul>
@@ -72,5 +73,5 @@ switch ($choix) {
 		<p>&copy; 2023 Jeu de rôle médiéval - Tous droits réservés.</p>
 	</footer>
 </body>
-
+<?php include "footer.php"; ?>
 </html>

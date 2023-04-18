@@ -1,16 +1,6 @@
 <?
 session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "jeu_de_role";
 
-try {
-    $pdo = new PDO('mysql:host=' . $servername . ';dbname=' . $dbname, $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $error) {
-    echo $error;
-}
 
 if (isset($_POST['nom'])) {
     // récupération des données du formulaire
@@ -52,4 +42,5 @@ if (isset($_POST['nom'])) {
     // redirection vers la page d'accueil
     header('Location: jeu.php');
     exit();
-}
+    <?php include "footer.php"; ?>
+}>

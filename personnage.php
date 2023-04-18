@@ -1,4 +1,5 @@
 <?
+include "header.php";
 session_start();
 $servername = "localhost";
 $username = "root";
@@ -37,10 +38,10 @@ if ($stmt->execute()) {
 		<nav>
 			<ul>
 				<li><a href="jeu.php">Accueil</a></li>
-				<li><a href="#">Profil</a></li>
-				<li><a href="#">Personnages</a></li>
-				<li><a href="#">Quêtes</a></li>
-				<li><a href="deconnexion.php">Déconnexion</a></li>
+				<li><a href="personnage.php">Profil</a></li>
+				<li><a href="personnage.php">Personnages</a></li>
+				<li><a href="">Quêtes</a></li>
+				<li><a href="">Déconnexion</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -81,5 +82,6 @@ if ($stmt->execute()) {
 		<p>&copy; 2023 Jeu de rôle médiéval - Tous droits réservés.</p>
 	</footer>
 </body>
+<?php include "footer.php"; ?>
 
 </html>
